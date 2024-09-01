@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>YouTube</title>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <span
+                    class="material-symbols-outlined"
+                    onclick="toggleSidebar()"
+                    >☰</span
+                >
+                <img
+                    src="https://www.youtube.com/s/desktop/12d6b690/img/favicon_144x144.png"
+                    alt="YouTube Logo"
+                />
+                <span>YouTube</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar" />
+                <button><span class="material-icons">search</span></button>
+            </div>
+            <div class="user-actions">
+                <span class="material-icons">video_call</span>
+                <span class="material-icons">apps</span>
+                <span class="material-icons">notifications</span>
+                <span class="material-icons">account_circle</span>
+                <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+                    <span class="material-icons">brightness_6</span>
+                </button>
+            </div>
+        </header>
+        <main>
+            <nav class="sidebar">
+                <div class="sidebar-section">
+                    <div class="sidebar-item">
+                        <span class="material-icons">home</span>
+                        <span>Início</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">short_text</span>
+                        <span>Shorts</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">subscriptions</span>
+                        <span>Inscrições</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">library_music</span>
+                        <span>YouTube Music</span>
+                    </div>
+                </div>
+                <div class="sidebar-divider"></div>
+                <div class="sidebar-section">
+                    <div class="sidebar-title">
+                        <button class="sidebar-button category-style">
+                            Você
+                            <span class="material-icons">chevron_right</span>
+                        </button>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">account_box</span>
+                        <span>Seu canal</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">history</span>
+                        <span>Histórico</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">playlist_play</span>
+                        <span>Playlists</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">video_library</span>
+                        <span>Seus vídeos</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">watch_later</span>
+                        <span>Assistir mais tarde</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">thumb_up</span>
+                        <span>Vídeos com "Gostei"</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <span class="material-icons">file_download</span>
+                        <span>Downloads</span>
+                    </div>
+                </div>
+                <div class="sidebar-divider"></div>
+                <div class="sidebar-section">
+                    <div class="sidebar-title">
+                        <button class="sidebar-button category-style">
+                            Inscrições
+                            <span class="material-icons">chevron_right</span>
+                        </button>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/koseki_bijou.png"
+                            alt="Koseki Bijou Ch. hololive-EN"
+                            class="channel-icon"
+                        />
+                        <span>Koseki Bijou Ch. hololive-EN</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/manlybadasshero.png"
+                            alt="ManlyBadassHero"
+                            class="channel-icon"
+                        />
+                        <span>ManlyBadassHero</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/ishowspeed.png"
+                            alt="IShowSpeed"
+                            class="channel-icon"
+                        />
+                        <span>IShowSpeed</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/daily_dose_of_internet.png"
+                            alt="Daily Dose Of Internet"
+                            class="channel-icon"
+                        />
+                        <span>Daily Dose Of Internet</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/onlywaifu.png"
+                            alt="OnlyWaifu"
+                            class="channel-icon"
+                        />
+                        <span>OnlyWaifu</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/mrbeast.png"
+                            alt="MrBeast"
+                            class="channel-icon"
+                        />
+                        <span>MrBeast</span>
+                    </div>
+                    <div class="sidebar-item">
+                        <img
+                            src="/channel-icons/millenniathinker.png"
+                            alt="MillenniaThinker"
+                            class="channel-icon"
+                        />
+                        <span>MillenniaThinker</span>
+                    </div>
+                </div>
+            </nav>
+            <div class="content">
+                <div class="categories">
+                    <button class="category-button">Tudo</button>
+                    <button class="category-button">Música</button>
+                    <button class="category-button">Jogos</button>
+                    <button class="category-button">Notícias</button>
+                    <button class="category-button">Esportes</button>
+                    <button class="category-button">Comédia</button>
+                </div>
+                <div class="videos-grid">
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">
+                                    Never Gonna Give You Up
+                                </div>
+                                <div class="video-channel">Rick Astley</div>
+                                <div class="video-views">
+                                    1B visualizações • há 13 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Shape of You</div>
+                                <div class="video-channel">Ed Sheeran</div>
+                                <div class="video-views">
+                                    5.6B visualizações • há 6 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Despacito</div>
+                                <div class="video-channel">Luis Fonsi</div>
+                                <div class="video-views">
+                                    7.8B visualizações • há 6 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/RgKAFK5djSk/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">See You Again</div>
+                                <div class="video-channel">Wiz Khalifa</div>
+                                <div class="video-views">
+                                    5.4B visualizações • há 8 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/OPf0YbXqDm0/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Uptown Funk</div>
+                                <div class="video-channel">Mark Ronson</div>
+                                <div class="video-views">
+                                    4.4B visualizações • há 8 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/YQHsXMglC9A/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Hello</div>
+                                <div class="video-channel">Adele</div>
+                                <div class="video-views">
+                                    3B visualizações • há 7 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Gangnam Style</div>
+                                <div class="video-channel">PSY</div>
+                                <div class="video-views">
+                                    4.4B visualizações • há 10 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Sugar</div>
+                                <div class="video-channel">Maroon 5</div>
+                                <div class="video-views">
+                                    3.5B visualizações • há 8 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/09R8_2nJtjg/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Sugar</div>
+                                <div class="video-channel">Maroon 5</div>
+                                <div class="video-views">
+                                    3.5B visualizações • há 8 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <img
+                            src="https://i.ytimg.com/vi/CevxZvSJLk8/hqdefault.jpg"
+                            alt="Video Thumbnail"
+                        />
+                        <div class="video-info">
+                            <img
+                                class="channel-icon"
+                                src="https://via.placeholder.com/32x32"
+                                alt="Channel Icon"
+                            />
+                            <div class="video-details">
+                                <div class="video-title">Roar</div>
+                                <div class="video-channel">Katy Perry</div>
+                                <div class="video-views">
+                                    3.5B visualizações • há 9 anos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shorts-section">
+                    <h2 class="shorts-title">
+                        <span class="material-icons">short_text</span>
+                        Shorts
+                    </h2>
+                    <div class="shorts-grid">
+                        <div class="short-card">
+                            <img
+                                src="https://i.ytimg.com/vi/short1/hqdefault.jpg"
+                                alt="Short Thumbnail"
+                            />
+                            <div class="short-info">
+                                <div class="short-title">Funny Cat Moments</div>
+                                <div class="short-views">10M visualizações</div>
+                            </div>
+                        </div>
+                        <div class="short-card">
+                            <img
+                                src="https://i.ytimg.com/vi/short2/hqdefault.jpg"
+                                alt="Short Thumbnail"
+                            />
+                            <div class="short-info">
+                                <div class="short-title">
+                                    Amazing Magic Trick
+                                </div>
+                                <div class="short-views">5M visualizações</div>
+                            </div>
+                        </div>
+                        <div class="short-card">
+                            <img
+                                src="https://i.ytimg.com/vi/short3/hqdefault.jpg"
+                                alt="Short Thumbnail"
+                            />
+                            <div class="short-info">
+                                <div class="short-title">Quick Cooking Tip</div>
+                                <div class="short-views">8M visualizações</div>
+                            </div>
+                        </div>
+                        <div class="short-card">
+                            <img
+                                src="https://i.ytimg.com/vi/short4/hqdefault.jpg"
+                                alt="Short Thumbnail"
+                            />
+                            <div class="short-info">
+                                <div class="short-title">Dance Challenge</div>
+                                <div class="short-views">15M visualizações</div>
+                            </div>
+                        </div>
+                        <div class="short-card">
+                            <img
+                                src="https://i.ytimg.com/vi/short5/hqdefault.jpg"
+                                alt="Short Thumbnail"
+                            />
+                            <div class="short-info">
+                                <div class="short-title">Life Hack</div>
+                                <div class="short-views">7M visualizações</div>
+                            </div>
+                        </div>
+                        <div class="short-card">
+                            <img
+                                src="https://i.ytimg.com/vi/short6/hqdefault.jpg"
+                                alt="Short Thumbnail"
+                            />
+                            <div class="short-info">
+                                <div class="short-title">Cute Puppy Tricks</div>
+                                <div class="short-views">12M visualizações</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>
+            function toggleDarkMode() {
+                document.body.classList.toggle("dark-mode");
+            }
+            function toggleSidebar() {
+                const sidebar = document.querySelector(".sidebar");
+                const content = document.querySelector(".content");
+                sidebar.classList.toggle("closed");
+                content.classList.toggle("sidebar-closed");
+            }
+        </script>
+    </body>
+</html>
